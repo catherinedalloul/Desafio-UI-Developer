@@ -1,0 +1,203 @@
+/* FONTES */
+
+@font-face {
+    font-family: "ProximaNova-Black";
+    src: url('http://static.tumblr.com/xqg3xm1/fkPorq3em/proximanova-black.otf');
+}
+
+@font-face {
+    font-family: "ProximaNova-Regular";
+    src: url('http://static.tumblr.com/xqg3xm1/aJcorq3ip/proximanova-regular.otf');
+}
+
+@font-face {
+    font-family: "ProximaNova-Light";
+    src: url('http://static.tumblr.com/2ncvbco/eEqorq676/proximanova-light.otf');
+}
+
+/* ESTILOS GERAIS */
+
+body{
+    margin:0;
+    padding:0;
+    font-family:sans-serif;
+    line-height: normal;
+    height: 100%;
+    background-size: cover;
+    background-image: -webkit-linear-gradient(-110deg, #5d1eb2 50%, #ff223e 50%);
+}
+
+p.small {
+    line-height: 5px;
+}
+
+h1 {
+    font-size: 90px;
+    color: #fff;
+    font-family: 'ProximaNova-Black';
+}
+
+header, footer {
+    height: 120px;
+    padding: 40px;
+}
+
+/* CLASSES */
+
+.header-symbol {
+    background-img: url(�img/logo-symbol.svg�);
+    float: left;
+}
+.header-type {
+    display: block;
+}
+
+.subtitle {
+    font-size: 20px;
+    font-family: 'ProximaNova-Light';
+    color: #fff;
+}
+
+.sub_subtitle {
+    font-size: 18px;
+    font-family: 'ProximaNova-Light';
+    color: #fff;
+    text-align: center;
+    margin-top: 5px;
+}
+
+.twt-user {
+    background: #fff;
+    height: 412px;
+    color: #000000;
+    border-radius: 5px;
+    text-align: center;
+    padding: 20px;
+    font-family: 'ProximaNova-Regular';
+    font-size: 18px;
+}
+
+.twt-content {
+    font-size: 14px;
+    text-align: center;
+}
+
+.twt-about {
+    font-family: 'ProximaNova-Light';
+    font-style: italic;
+    color: #898989;
+    max-width: 234px;
+}
+
+.twt-img {
+    max-width: 234px;
+    border-radius: 5px;
+}
+
+.user {
+    font-family: 'ProximaNova-Light';
+    color: #898989;
+}
+
+
+.logo {
+    margin-right: 20px;
+    float: left;
+}
+
+.name {
+    font-size: 100px;
+    color: #fff;
+    font-family: 'ProximaNova-Black';
+    text-align: center;
+}
+
+
+
+/* TIMELINE */
+
+.timeline ul li {
+    list-style-type: none;
+    position: relative;
+    width: 6px;
+    border-radius: 5px;
+    margin: 0 auto;
+    padding-top: 40px;
+    background: #fff;
+}
+
+.timeline ul li::after {
+    content: '';
+    position: absolute;
+    left: 50%;
+    bottom: 25%;
+    transform: translateX(-50%);
+    width: 20px;
+    height: 20px;
+    border-style: solid;
+    border-width: 5px;
+    border-radius: 50%;
+    border-color: #ff223e;
+    background: #ffffff;
+}
+
+.timeline ul li div {
+    position: relative;
+    bottom: 0;
+    width: 400px;
+    padding: 15px;
+    border-radius: 5px;
+    background: #fff;
+}
+
+.timeline ul li div::before {
+    content: '';
+    position: absolute;
+    bottom: 7px;
+    width: 0;
+    height: 0;
+    border-style: solid;
+}
+
+.timeline ul li:nth-child(odd) div {
+    left: 45px;
+}
+
+.timeline ul li:nth-child(odd) div::before {
+    left: -15px;
+    top: 50%;
+    border-width: 8px 16px 8px 0;
+    border-color: transparent #fff transparent transparent;
+}
+
+.timeline ul li:nth-child(even) div {
+    left: -439px;
+    text-align: right;
+}
+
+.timeline ul li:nth-child(even) div::before {
+    right: -15px;
+    top: 50%;
+    border-width: 8px 0 8px 16px;
+    border-color: transparent transparent transparent #fff;
+}
+
+
+.timeline-text {
+    height:auto;
+    font-family: 'ProximaNova-Light';
+    font-style: italic;
+    color: #898989;
+}
+
+.twt-time {
+    font-family: 'ProximaNova-Regular';
+    font-size: 10px;
+}
+
+.timeline-img {
+    border-radius: 50px;
+    max-width: 55px;
+    float: left;
+    margin-left:1%;
+}
